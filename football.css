@@ -155,6 +155,7 @@ body {
     font-weight: 800;
     border-radius: 10px;
     background: white;
+
 }
 
 .group {
@@ -240,7 +241,7 @@ body {
         display: flex;
         background: none;
         border: none;
-        
+
 
 
 
@@ -251,7 +252,7 @@ body {
         display: flex;
         flex-direction: row;
         column-gap: 70px;
-       
+
     }
 
     .up-coming {
@@ -315,7 +316,8 @@ body {
     .single_box {
         width: 100%;
     }
-    .blog_left{
+
+    .blog_left {
         background-color: #663399;
     }
 
@@ -337,8 +339,8 @@ body {
     background-color: black;
     margin-top: 100px;
     padding: 40px 0px;
-   
-   
+
+
 
 
 }
@@ -350,7 +352,7 @@ body {
     display: flex;
     flex-direction: column;
     text-align: center;
-   
+
 }
 
 .service_sec {
@@ -362,11 +364,10 @@ body {
     font-weight: 700;
     margin-top: 40px;
     color: gray
-
 }
 
 .goal {
-    border-bottom: 1px solid  gray;
+    border-bottom: 1px solid gray;
 
 }
 
@@ -375,30 +376,125 @@ body {
     font-weight: 800;
     color: rgb(240, 228, 228);
 }
-.scocial_icon{
+
+.scocial_icon {
     display: flex;
     justify-content: space-evenly;
-   
+
     width: 300px;
     margin: 40px auto;
-    
+
 }
+
 .scocial_icon i {
     font-size: 30px;
     color: gray;
 }
-    /* footer for mobile resposive start */
+
+/* footer for mobile resposive start */
 @media screen and (max-width:576px) {
     .service_sec {
         flex-direction: column;
         row-gap: 30px;
     }
-    .goal{
+
+    .goal {
         width: 75%;
         margin: 0 auto;
     }
 }
 
-    /* footer for mobile resposive end */
+/* footer for mobile resposive end */
 
 /* footer sectin end  */
+
+
+/* second page  */
+.blog_match {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 15px;
+    column-gap: 15px;
+    width: 100%
+}
+
+.single_card {
+    display: flex;
+    align-items: center;
+
+
+
+}
+
+.single_card .vss {
+    padding: 0 5px;
+}
+
+.team {
+    border: 1px solid #E7EAED;
+    padding: 15px;
+    width: 250px;
+
+}
+
+.time {
+    text-align: center;
+}
+
+.up-coming a {
+    text-decoration: none;
+    font-weight: 800;
+    color: black;
+
+}
+
+.blog-btn i {
+    padding-right: 5px;
+}
+
+.blog-btn a {
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (max-width:576px) {
+    .blog_match {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 15px;
+        column-gap: 15px;
+
+        margin-top: 50px
+    }
+
+    .team {
+        width: 100%;
+    }
+
+    .single_card {
+        display: flex;
+        justify-content: center;
+    }
+
+
+}
+
+@media screen and (min-width:688px) and (max-width:944px) {
+    .blog_match {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 15px;
+        column-gap: 15px;
+
+        margin-top: 50px
+    }
+}
+
+.team {
+    width: 100%;
+}
+
+.single_card {
+    display: flex;
+    justify-content: center;
+}
