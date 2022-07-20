@@ -231,8 +231,8 @@ body {
         align-items: center;
         width: 100%;
         margin-top: -50px;
-     
-        
+
+
 
     }
 
@@ -240,7 +240,8 @@ body {
         display: flex;
         background: none;
         border: none;
-       
+        
+
 
 
     }
@@ -249,7 +250,8 @@ body {
         text-align: center;
         display: flex;
         flex-direction: row;
-        column-gap: 70px
+        column-gap: 70px;
+       
     }
 
     .up-coming {
@@ -272,6 +274,7 @@ body {
         width: 200px;
 
     }
+
     .blog_right {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -280,7 +283,8 @@ body {
         width: 100%;
         margin-top: -100px;
     }
-    .single_box{
+
+    .single_box {
         width: 100%;
     }
 }
@@ -293,11 +297,12 @@ body {
         justify-content: center;
         align-items: center;
         width: 100%;
-       
-     
-        
+
+
+
 
     }
+
     .blog_right {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -305,10 +310,13 @@ body {
         column-gap: 15px;
         width: 100%;
         margin-top: 50px
-      
     }
-    .single_box{
+
+    .single_box {
         width: 100%;
+    }
+    .blog_left{
+        background-color: #663399;
     }
 
 }
@@ -318,3 +326,79 @@ body {
 /* blog tablet resposive end */
 
 /* blog section style end  */
+
+/* footer sectin start  */
+.footer_side {
+    border: 1px solid;
+    height: 440px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: black;
+    margin-top: 100px;
+    padding: 40px 0px;
+   
+   
+
+
+}
+
+.all_footer {
+    width: 1140px;
+
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+   
+}
+
+.service_sec {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-evenly;
+    font-size: 15px;
+    font-weight: 700;
+    margin-top: 40px;
+    color: gray
+
+}
+
+.goal {
+    border-bottom: 1px solid  gray;
+
+}
+
+.goal h2 {
+    font-size: 40px;
+    font-weight: 800;
+    color: rgb(240, 228, 228);
+}
+.scocial_icon{
+    display: flex;
+    justify-content: space-evenly;
+   
+    width: 300px;
+    margin: 40px auto;
+    
+}
+.scocial_icon i {
+    font-size: 30px;
+    color: gray;
+}
+    /* footer for mobile resposive start */
+@media screen and (max-width:576px) {
+    .service_sec {
+        flex-direction: column;
+        row-gap: 30px;
+    }
+    .goal{
+        width: 75%;
+        margin: 0 auto;
+    }
+}
+
+    /* footer for mobile resposive end */
+
+/* footer sectin end  */
