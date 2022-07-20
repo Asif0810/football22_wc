@@ -8,7 +8,7 @@ body {
 
 
 .top_banner {
-    max-width: 1320px;
+    max-width: 1140px;
     display: flex;
     justify-content: center;
     background-color: black;
@@ -17,18 +17,19 @@ body {
 }
 
 .banner_content {
-   
+
     display: flex;
     justify-content: center;
-    max-width: 1140px;
+    max-width: 900px;
     align-items: center;
+
 
 
 }
 
 .top_heading {
     width: 550px;
-    
+
     width: 530px;
     height: 420px;
 
@@ -36,7 +37,7 @@ body {
 }
 
 .top_image img {
- 
+
     width: 550px;
     margin-left: 50px;
 }
@@ -64,45 +65,256 @@ body {
 .top_btn i {
     padding-left: 5px;
 }
-                         /* top banner for tablet  start*/
- @media screen  and (max-width:944px) {
 
-    .top_banner{
+/* top banner for tablet  start*/
+@media screen and (max-width:944px) {
+
+    .top_banner {
         background-color: rebeccapurple;
     }
-       
-          .banner_content{
-            padding: 0 80px;
-          }   
-                
-                
-               
-            
-            .top_image img{
-                width: 90%;
-            }
-    
-        }
-                    /* top banner for tablet  end*/
-                /* top banner for mobile  start */
-@media screen and (max-width:576px) {
-        .top_banner{
-          
-            
-        }
-        .banner_content{
-            display: flex;
-           flex-direction: column;
-        }
-        .top_heading {
-            width: 100%;
-            margin-bottom: 20px;
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-        }
-      
+
+    .banner_content {
+        padding: 0 80px;
+    }
+
+
+
+
+    .top_image img {
+        width: 90%;
+    }
+
 }
-                /* top banner for mobile  end */
+
+/* top banner for tablet  end*/
+/* top banner for mobile  start */
+@media screen and (max-width:576px) {
+    .top_banner {}
+
+    .banner_content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .top_heading {
+        width: 100%;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+}
+
+/* top banner for mobile  end */
 
 /* -------top banner style end ---------- */
+
+
+/* blog section style start  */
+.all_blog {
+    display: flex;
+    width: 1140px;
+
+    margin: 0 auto;
+    justify-content: space-between;
+    margin-top: 100px;
+
+}
+
+.blog_left {
+    border: 1px solid black;
+    width: 280px;
+    height: 280px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    border-radius: 10px;
+
+
+
+}
+
+.card {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+
+
+}
+
+
+
+
+
+.up-coming {
+    width: 250px;
+
+    font-weight: 800;
+    border-radius: 10px;
+    background: white;
+}
+
+.group {
+    width: 250px;
+
+    font-weight: 800;
+    border-radius: 10px;
+    background: white;
+}
+
+.blog-btn {
+    width: 250px;
+
+    font-weight: 800;
+    border-radius: 10px;
+    background: red;
+    color: white;
+
+}
+
+.blog_right {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 15px;
+    column-gap: 15px;
+}
+
+.single_box {
+    width: 270px;
+    border: 1px solid #DEE1E6;
+    border-radius: 5px;
+
+
+}
+
+.single_box img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.box_title span {
+
+    padding: 5px 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+
+}
+
+.card_icon .clock {
+    padding-right: 5px;
+
+}
+
+.card_icon span {
+    margin-right: 20px;
+}
+
+.box_title {
+    padding: 0px 10px;
+}
+
+.card_icon {
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* blog tablet resposive start */
+@media screen and (min-width:688px) and (max-width:944px) {
+    .all_blog {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-top: -50px;
+     
+        
+
+    }
+
+    .blog_left {
+        display: flex;
+        background: none;
+        border: none;
+       
+
+
+    }
+
+    .card {
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        column-gap: 70px
+    }
+
+    .up-coming {
+        border: 2px solid;
+        border-radius: 5px;
+        width: 200px;
+
+    }
+
+    .group {
+        border: 2px solid;
+        border-radius: 5px;
+        width: 200px;
+
+    }
+
+    .blog-btn {
+        border: 2px solid;
+        border-radius: 5px;
+        width: 200px;
+
+    }
+    .blog_right {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 15px;
+        column-gap: 15px;
+        width: 100%;
+        margin-top: -100px;
+    }
+    .single_box{
+        width: 100%;
+    }
+}
+
+/* blog mobile section start  */
+@media screen and (max-width:576px) {
+    .all_blog {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+       
+     
+        
+
+    }
+    .blog_right {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 15px;
+        column-gap: 15px;
+        width: 100%;
+        margin-top: 50px
+      
+    }
+    .single_box{
+        width: 100%;
+    }
+
+}
+
+/* blog mobile section end  */
+
+/* blog tablet resposive end */
+
+/* blog section style end  */
